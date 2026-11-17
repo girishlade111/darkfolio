@@ -9,6 +9,18 @@ import { projects } from '../data/projects';
 import { fadeUp, headingReveal } from '../components/motion/motionVariants';
 import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
+export const getSafeHostname = (urlString: string): string => {
+  const trimmed = urlString.trim();
+  if (!trimmed) return '';
+
+  try {
+    const normalizedUrl = /^https?:\/\//i.test(trimmed) ? trimmed : `https://${trimmed}`;
+    return new URL(normalizedUrl).hostname;
+  } catch {
+    return trimmed.replace(/^https?:\/\//i, '').split('/')[0];
+  }
+};
+
 export const ProjectDetailPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const project = projects.find((p) => p.slug === slug);
@@ -99,7 +111,7 @@ export const ProjectDetailPage: React.FC = () => {
                 className="meta-value"
                 style={{ textDecoration: 'underline', textUnderlineOffset: '4px' }}
               >
-                {new URL(project.website).hostname}
+                {getSafeHostname(project.website)}
               </a>
             </div>
           </div>
