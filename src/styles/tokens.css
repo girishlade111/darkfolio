@@ -25,9 +25,9 @@
   --tracking-tag: 0.06em;
 
   /* Layout and Spacing */
-  --page-gutter: clamp(20px, 5.2vw, 84px);
+  --page-gutter: clamp(16px, 5.2vw, 84px);
   --content-max: 1360px;
-  --section-space: clamp(80px, 12vw, 160px);
+  --section-space: clamp(60px, 10vw, 160px);
   --radius-card: 20px;
   --radius-pill: 9999px;
   --radius-button: 9999px;
