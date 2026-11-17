@@ -1,0 +1,41 @@
+:root {
+  /* Colors */
+  --color-bg: #0a0a09;
+  --color-text: #ffffff;
+  --color-text-secondary: #969696;
+  --color-text-muted: #666666;
+  --color-accent: #ffd9d9;
+  --color-accent-text: #0a0a09;
+  --color-nav-surface: #232323;
+  --color-nav-border: rgba(255, 255, 255, 0.08);
+  --color-button-bg: #282827;
+  --color-button-hover: #383837;
+  --color-button-active: #1e1e1d;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-border-subtle: rgba(255, 255, 255, 0.06);
+  --color-chip-border: rgba(255, 255, 255, 0.22);
+  --color-chip-text: #cccccc;
+  --color-focus: #ffd9d9;
+
+  /* Typography */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --tracking-display: -0.03em;
+  --tracking-heading: -0.02em;
+  --tracking-body: -0.01em;
+  --tracking-tag: 0.06em;
+
+  /* Layout and Spacing */
+  --page-gutter: clamp(20px, 5.2vw, 84px);
+  --content-max: 1360px;
+  --section-space: clamp(80px, 12vw, 160px);
+  --radius-card: 20px;
+  --radius-pill: 9999px;
+  --radius-button: 9999px;
+
+  /* Motion Timing */
+  --motion-fast: 0.2s;
+  --motion-base: 0.4s;
+  --motion-slow: 0.7s;
+  --ease-out-editorial: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-smooth: cubic-bezier(0.65, 0, 0.35, 1);
+}

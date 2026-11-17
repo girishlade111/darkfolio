@@ -1,0 +1,88 @@
+import { SkillCategory } from '../types';
+
+export const skillCategories: SkillCategory[] = [
+  {
+    title: 'FRONTEND ENGINEERING',
+    description: 'Modern component systems, responsive layouts, client execution, and accessible web architectures.',
+    skills: [
+      'React & TypeScript',
+      'Astro & Static Site Architecture',
+      'Next.js & Server Components',
+      'Vite & Build Tooling',
+      'HTML5 Semantic Markup',
+      'Modern CSS & Design Tokens',
+      'Responsive Fluid Layouts',
+      'WCAG Accessibility Patterns',
+    ],
+  },
+  {
+    title: 'UI/UX & INTERFACE DESIGN',
+    description: 'System-based design, typographic hierarchies, interaction design, and usable workflows.',
+    skills: [
+      'Design Systems & Tokens',
+      'Information Architecture',
+      'Minimal Editorial Typography',
+      'Micro-Interactions & Transitions',
+      'Figma Workflow Integration',
+      'Wireframing & Prototyping',
+      'Keyboard Navigation UX',
+      'Usability & State Design',
+    ],
+  },
+  {
+    title: 'BROWSER COMPUTING & RUNTIMES',
+    description: 'Client-side processing, sandboxed environments, local-first storage, and in-browser utilities.',
+    skills: [
+      'Monaco Editor Integration',
+      'WebContainers & In-Browser Execution',
+      'Web Workers & Off-Thread Tasks',
+      'IndexedDB & Local Persistence',
+      'HTML Canvas & Visual Loops',
+      'WebAssembly / WASM Concepts',
+      'Client File Transformations',
+      'Sandboxed Iframe Security',
+    ],
+  },
+  {
+    title: 'DOCUMENT & MEDIA SYSTEMS',
+    description: 'Parsing, sanitization, math typesetting, and document compilation in the browser.',
+    skills: [
+      'Markdown & GitHub-Flavored Markdown',
+      'PDF Generation & Manipulation (pdf-lib, PDF.js)',
+      'DOMPurify Sanitization',
+      'KaTeX Mathematical Typesetting',
+      'Syntax Highlighting Systems',
+      'Print-Oriented CSS & Book Layouts',
+      'Client-Side Image Compression & Resizing',
+      'ZIP Archive Bundling in Browser',
+    ],
+  },
+  {
+    title: 'BACKEND & DATA PATTERNS',
+    description: 'API design, authentication patterns, server routes, and data management.',
+    skills: [
+      'Node.js & Serverless Functions',
+      'RESTful API Principles',
+      'Supabase & Firebase Integration',
+      'PostgreSQL Concepts & Relational Models',
+      'Session & Authentication Flows',
+      'BYOK (Bring Your Own Key) Design',
+      'Data Minimization Architecture',
+      'File Storage & Expiring Links',
+    ],
+  },
+  {
+    title: 'DEVELOPER WORKFLOW & SEO',
+    description: 'Version control, deployment pipelines, semantic discoverability, and internationalization.',
+    skills: [
+      'Git & GitHub Team Workflows',
+      'Vercel Deployment & CI/CD',
+      'Semantic Structure & Metadata',
+      'Multilingual Content Routing (hreflang)',
+      'Performance Optimization & Core Web Vitals',
+      'Sitemap & Structured Schema',
+      'Technical Documentation Writing',
+      'Responsible AI-Assisted Tooling',
+    ],
+  },
+];
